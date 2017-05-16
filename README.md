@@ -1,14 +1,9 @@
 # Online-MCQ-Test
-#Language
-
+# Language
 java
-#Tested on:
-
+# Tested on:
 kali linux
-
-#Required Software
-
+# Required Software
 Mysql server
-
 Netbeans
 
