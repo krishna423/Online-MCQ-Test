@@ -14,3 +14,8 @@ Java(TM) SE Runtime Environment (build 1.8.0_131-b11)
  
  # To Run The Project
  
+ use terminal
+ 
+ cd jar\ files
+ 
+ 
