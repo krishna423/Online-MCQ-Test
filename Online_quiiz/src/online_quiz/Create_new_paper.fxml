@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="700.0" prefWidth="1400.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="online_quiz.Create_new_paper">
+   <children>
+      <ImageView fitHeight="693.0" fitWidth="1404.0" layoutX="4.0" layoutY="5.0" opacity="0.79">
+         <image>
+            <Image url="@../background/HD-purple-wallpaper-image-to-use-as-background-132.jpg" />
+         </image>
+      </ImageView>
+      <Pane layoutX="48.0" layoutY="72.0" prefHeight="598.0" prefWidth="1305.0">
+         <children>
+            <ImageView fitHeight="605.0" fitWidth="1312.0" layoutX="-2.0" layoutY="-2.0" opacity="0.36">
+               <image>
+                  <Image url="@../background/shiny_purple_wave_abstract_background_vector_544734.jpg" />
+               </image>
+            </ImageView>
+            <JFXTextField fx:id="qq" layoutX="125.0" layoutY="14.0" maxWidth="1218.0" minWidth="624.0" prefHeight="40.0" prefWidth="1128.0" promptText="question" style="-fx-prompt-text-fill: #000000;" />
+            <JFXTextField fx:id="op1" layoutX="125.0" layoutY="147.0" maxWidth="1218.0" minWidth="624.0" prefHeight="40.0" prefWidth="1128.0" promptText="Opt-1" style="-fx-prompt-text-fill: #000000;" />
+            <JFXTextField fx:id="op2" layoutX="125.0" layoutY="239.0" maxWidth="1218.0" minWidth="624.0" prefHeight="40.0" prefWidth="1128.0" promptText="Opt-2" style="-fx-prompt-text-fill: #000000;" />
+            <JFXTextField fx:id="op3" layoutX="125.0" layoutY="332.0" maxWidth="1218.0" minWidth="624.0" prefHeight="40.0" prefWidth="1128.0" promptText="Opt-3" style="-fx-prompt-text-fill: #000000;" />
+            <JFXTextField fx:id="op4" layoutX="125.0" layoutY="437.0" maxWidth="1218.0" minWidth="624.0" prefHeight="40.0" prefWidth="1128.0" promptText="Opt-4" style="-fx-prompt-text-fill: #000000;" />
+            <JFXButton fx:id="add" buttonType="RAISED" layoutX="392.0" layoutY="524.0" onAction="#btnadd" prefHeight="40.0" prefWidth="89.0" style="-fx-background-color: #0b43a4;" text="ADD" textFill="WHITE">
+               <font>
+                  <Font size="22.0" />
+               </font></JFXButton>
+            <JFXButton fx:id="eee" layoutX="829.0" layoutY="524.0" onAction="#btneee" prefHeight="40.0" prefWidth="89.0" ripplerFill="#2950c5" style="-fx-background-color: #0b43a4;" text="Exit" textFill="WHITE">
+               <font>
+                  <Font size="22.0" />
+               </font></JFXButton>
+            <Label fx:id="jlbl" layoutX="14.0" layoutY="14.0" prefHeight="40.0" prefWidth="69.0" text="Q-no1" />
+            <Label layoutX="14.0" layoutY="147.0" prefHeight="40.0" prefWidth="69.0" text="OPt-1" />
+            <Label layoutX="14.0" layoutY="239.0" prefHeight="40.0" prefWidth="69.0" text="OPt-2" />
+            <Label layoutX="14.0" layoutY="332.0" prefHeight="40.0" prefWidth="69.0" text="OPt-3" />
+            <Label layoutX="14.0" layoutY="437.0" prefHeight="40.0" prefWidth="69.0" text="OPt-4" />
+            <Label layoutX="22.0" layoutY="524.0" prefHeight="40.0" prefWidth="69.0" text="Ans" />
+            <JFXTextField fx:id="qq1" layoutX="132.0" layoutY="54.0" maxWidth="1218.0" minWidth="624.0" prefHeight="40.0" prefWidth="1128.0" />
+            <JFXComboBox fx:id="cmbans" layoutX="125.0" layoutY="531.0" prefHeight="26.0" prefWidth="69.0" />
+         </children>
+      </Pane>
+      <MenuBar fx:id="menuuser" layoutX="1239.0" layoutY="5.0" />
+   </children>
+</AnchorPane>

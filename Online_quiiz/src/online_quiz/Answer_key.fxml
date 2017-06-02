@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="700.0" prefWidth="1400.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="online_quiz.Answer_key">
+   <children>
+      <ImageView fitHeight="753.0" fitWidth="1408.0" layoutX="-1.0" layoutY="-50.0" opacity="0.81">
+         <image>
+            <Image url="@../background/Background%20Design%20Red%20Light%20Desktop%20wallpapers%20HD%20free%20-%20142119.jpg" />
+         </image>
+      </ImageView>
+      <Pane layoutX="55.0" layoutY="35.0" prefHeight="626.0" prefWidth="1284.0">
+         <children>
+            <ImageView fitHeight="638.0" fitWidth="1298.0" layoutX="-4.0" layoutY="-5.0" opacity="0.32">
+               <image>
+                  <Image url="@../background/ca592eeb-8e85-4237-83fd-012716e431eb.jpg" />
+               </image>
+            </ImageView>
+            <Label fx:id="attempt" layoutX="21.0" layoutY="132.0" prefHeight="26.0" prefWidth="146.0" text="ATTEMPT -" visible="false" wrapText="true">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <Label fx:id="right" layoutX="21.0" layoutY="96.0" prefHeight="26.0" prefWidth="93.0" text="Score-" textFill="#11ff00" visible="false" wrapText="true">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <Label fx:id="wrong" layoutX="21.0" layoutY="205.0" prefHeight="26.0" prefWidth="136.0" text="Wrong -" textFill="RED" visible="false" wrapText="true">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <Label fx:id="notattempt" layoutX="21.0" layoutY="167.0" prefHeight="26.0" prefWidth="187.0" text="NOT ATTEMPT -" visible="false" wrapText="true">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <JFXButton fx:id="temp" disable="true" layoutX="89.0" layoutY="554.0" />
+            <Pane layoutX="492.0" layoutY="145.0" prefHeight="475.0" prefWidth="394.0">
+               <children>
+                  <ImageView fitHeight="475.0" fitWidth="394.0" opacity="0.4">
+                     <image>
+                        <Image url="@../background/HD-purple-wallpaper-image-to-use-as-background-132.jpg" />
+                     </image>
+                  </ImageView>
+                  <VBox fx:id="v1" layoutX="-1.0" prefHeight="475.0" prefWidth="110.0" />
+                  <VBox fx:id="v2" layoutX="109.0" prefHeight="475.0" prefWidth="110.0" />
+                  <VBox fx:id="v3" layoutX="219.0" prefHeight="475.0" prefWidth="110.0" />
+                  <VBox fx:id="v4" layoutX="329.0" prefHeight="475.0" prefWidth="62.0" />
+               </children>
+            </Pane>
+            <Label fx:id="notattempt1" layoutX="554.0" layoutY="96.0" prefHeight="49.0" prefWidth="246.0" text="Score Board" underline="true" wrapText="true">
+               <font>
+                  <Font size="40.0" />
+               </font>
+            </Label>
+            <Label fx:id="msg" layoutX="157.0" layoutY="33.0" prefHeight="26.0" prefWidth="802.0" wrapText="true">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <MenuBar fx:id="menuuser" layoutX="1229.0" />
+   </children>
+</AnchorPane>

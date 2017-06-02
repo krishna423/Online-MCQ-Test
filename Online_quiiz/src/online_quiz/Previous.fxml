@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="700.0" prefWidth="1397.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="online_quiz.Previous">
+   <children>
+      <ImageView fitHeight="714.0" fitWidth="1412.0" layoutX="-12.0" layoutY="-5.0" opacity="0.96">
+         <image>
+            <Image url="@../background/HD-purple-wallpaper-image-to-use-as-background-132.jpg" />
+         </image>
+      </ImageView>
+      <Pane layoutX="44.0" layoutY="41.0" prefHeight="634.0" prefWidth="1166.0">
+         <children>
+            <ImageView fitHeight="634.0" fitWidth="1172.0" layoutX="-2.0" opacity="0.34">
+               <image>
+                  <Image url="@../background/shiny_purple_wave_abstract_background_vector_544734.jpg" />
+               </image>
+            </ImageView>
+            <ScrollPane layoutX="85.0" layoutY="51.0" prefHeight="42.0" prefWidth="1061.0" vbarPolicy="NEVER">
+               <content>
+                  <Label fx:id="ques" prefHeight="25.0" prefWidth="1233.0" />
+               </content>
+            </ScrollPane>
+            <Label fx:id="qno" layoutX="6.0" layoutY="51.0" prefHeight="42.0" prefWidth="79.0" text="Q no 1-">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <Label layoutX="14.0" layoutY="152.0" prefHeight="42.0" prefWidth="71.0" text="Opt 1-">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <Label layoutX="14.0" layoutY="252.0" prefHeight="42.0" prefWidth="71.0" text="Opt 2-">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <Label layoutX="14.0" layoutY="355.0" prefHeight="42.0" prefWidth="71.0" text="Opt 3-">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <Label layoutX="14.0" layoutY="461.0" prefHeight="42.0" prefWidth="71.0" text="Opt 4-">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <Label layoutX="14.0" layoutY="547.0" prefHeight="42.0" prefWidth="71.0" text="Ans -">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <ScrollPane layoutX="85.0" layoutY="152.0" prefHeight="42.0" prefWidth="1061.0">
+               <content>
+                  <Label fx:id="opt1" prefHeight="40.0" prefWidth="1057.0">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Label>
+               </content>
+            </ScrollPane>
+            <ScrollPane layoutX="85.0" layoutY="252.0" prefHeight="42.0" prefWidth="1061.0">
+               <content>
+                  <Label fx:id="opt2" prefHeight="40.0" prefWidth="1057.0">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Label>
+               </content>
+            </ScrollPane>
+            <ScrollPane layoutX="85.0" layoutY="355.0" prefHeight="42.0" prefWidth="1061.0">
+               <content>
+                  <Label fx:id="opt3" prefHeight="40.0" prefWidth="1057.0">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Label>
+               </content>
+            </ScrollPane>
+            <ScrollPane layoutX="85.0" layoutY="461.0" prefHeight="42.0" prefWidth="1061.0">
+               <content>
+                  <Label fx:id="opt4" prefHeight="40.0" prefWidth="1059.0">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Label>
+               </content>
+            </ScrollPane>
+            <Label fx:id="ans" layoutX="85.0" layoutY="547.0" prefHeight="42.0" prefWidth="71.0">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <Pane layoutX="1239.0" layoutY="53.0" prefHeight="634.0" prefWidth="102.0">
+         <children>
+            <VBox fx:id="vbox2" layoutX="54.0" layoutY="14.0" prefHeight="618.0" prefWidth="40.0" />
+            <VBox fx:id="vbox1" layoutX="7.0" layoutY="14.0" prefHeight="618.0" prefWidth="40.0" />
+         </children>
+      </Pane>
+      <MenuBar fx:id="menuuser" layoutX="1259.0" style="-fx-background-color: #1219dd#1219dd;" />
+      <JFXButton fx:id="bb" cacheShape="false" centerShape="false" focusTraversable="false" layoutX="1179.0" layoutY="674.0" prefHeight="27.0" prefWidth="60.0" scaleShape="false" visible="false" />
+   </children>
+</AnchorPane>

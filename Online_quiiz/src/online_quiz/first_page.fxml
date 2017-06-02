@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="1393.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="online_quiz.first_page">
+   <children>
+      <ImageView fitHeight="708.0" fitWidth="1394.0">
+         <image>
+            <Image url="@../background/Background%20Design%20Red%20Light%20Desktop%20wallpapers%20HD%20free%20-%20142119.jpg" />
+         </image>
+      </ImageView>
+      <Pane layoutX="45.0" layoutY="41.0" prefHeight="563.0" prefWidth="1281.0">
+         <children>
+            <ImageView fitHeight="562.0" fitWidth="1296.0" layoutX="-6.0" layoutY="-2.0" opacity="0.51">
+               <image>
+                  <Image url="@../background/iIAj1C1.jpg" />
+               </image>
+            </ImageView>
+            <Pane focusTraversable="true" layoutX="105.0" layoutY="75.0" prefHeight="375.0" prefWidth="400.0">
+               <children>
+                  <ImageView fitHeight="375.0" fitWidth="400.0" opacity="0.65">
+                     <image>
+                        <Image url="@../background/how-to-become-a-data-scientist.jpg" />
+                     </image>
+                  </ImageView>
+               </children>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+            </Pane>
+            <JFXButton fx:id="faculity" buttonType="RAISED" layoutX="105.0" layoutY="450.0" onAction="#btnfaculity" prefHeight="38.0" prefWidth="400.0" ripplerFill="#031b78" style="-fx-background-color: #0b43a4; -fx-background-radius: 5;" text="Faculity" textFill="WHITE" wrapText="true">
+               <font>
+                  <Font size="30.0" />
+               </font>
+            </JFXButton>
+            <Pane layoutX="678.0" layoutY="75.0" prefHeight="375.0" prefWidth="400.0">
+               <children>
+                  <ImageView fitHeight="375.0" fitWidth="412.0" layoutX="-6.0" opacity="0.68">
+                     <image>
+                        <Image url="@../background/idée-d-exellent-gosse-avec-l-ampoule-illustrée-18635172.jpg" />
+                     </image>
+                  </ImageView>
+               </children>
+            </Pane>
+            <JFXButton fx:id="student" buttonType="RAISED" layoutX="672.0" layoutY="450.0" onAction="#btnstudent" prefHeight="32.0" prefWidth="412.0" ripplerFill="#031b78" style="-fx-background-color: #0b43a4; -fx-background-radius: 5;" text="Student" textFill="WHITE" wrapText="true">
+               <font>
+                  <Font size="30.0" />
+               </font>
+            </JFXButton>
+         </children>
+      </Pane>
+      <Label alignment="CENTER" layoutX="459.0" layoutY="38.0" prefHeight="66.0" prefWidth="366.0" text="ONlLINE QUIZ" underline="true" wrapText="true">
+         <font>
+            <Font size="51.0" />
+         </font>
+      </Label>
+      <JFXButton fx:id="exit" buttonType="RAISED" layoutX="1176.0" layoutY="628.0" onAction="#btnexit" prefHeight="49.0" prefWidth="164.0" ripplerFill="#031b78" style="-fx-background-color: #0b43a4; -fx-background-radius: 30;" text="Exit" textFill="WHITE" wrapText="true">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </JFXButton>
+   </children>
+</AnchorPane>

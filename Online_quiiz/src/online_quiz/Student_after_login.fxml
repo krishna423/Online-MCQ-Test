@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXRadioButton?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="700.0" prefWidth="1400.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="online_quiz.Student_after_login">
+   <children>
+      <ImageView fitHeight="716.0" fitWidth="1398.0" layoutY="-7.0" opacity="0.94">
+         <image>
+            <Image url="@../background/HD-purple-wallpaper-image-to-use-as-background-132.jpg" />
+         </image>
+      </ImageView>
+      <Pane layoutX="60.0" layoutY="56.0" prefHeight="601.0" prefWidth="1274.0">
+         <children>
+            <ImageView fitHeight="609.0" fitWidth="1274.0" layoutY="-6.0" opacity="0.67">
+               <image>
+                  <Image url="@../background/shiny_purple_wave_abstract_background_vector_544734.jpg" />
+               </image>
+            </ImageView>
+            <JFXRadioButton fx:id="jRadiosol" layoutX="56.0" layoutY="33.0" onAction="#btnjRadiosol" prefHeight="29.0" prefWidth="219.0" text="Solve Paper">
+               <font>
+                  <Font size="22.0" />
+               </font>
+               <toggleGroup>
+                  <ToggleGroup fx:id="my" />
+               </toggleGroup>
+            </JFXRadioButton>
+            <JFXRadioButton fx:id="jRadiopra" layoutX="56.0" layoutY="155.0" onAction="#btnjRadiopra" prefHeight="29.0" prefWidth="219.0" text="Practice" toggleGroup="$my">
+               <font>
+                  <Font size="22.0" />
+               </font>
+            </JFXRadioButton>
+            <JFXRadioButton fx:id="jRadioread" layoutX="56.0" layoutY="415.0" onAction="#btnjRadioread" prefHeight="29.0" prefWidth="219.0" text="Read" toggleGroup="$my">
+               <font>
+                  <Font size="22.0" />
+               </font>
+            </JFXRadioButton>
+            <JFXButton fx:id="jbtnsubmit" buttonType="RAISED" layoutX="566.0" layoutY="524.0" onAction="#jbtnsubmit" prefHeight="50.0" prefWidth="134.0" ripplerFill="#070e94" style="-fx-background-color: #000cff; -fx-background-radius: 50;" text="Submit" textFill="WHITE" wrapText="true">
+               <font>
+                  <Font size="25.0" />
+               </font>
+            </JFXButton>
+            <JFXComboBox fx:id="solyear" layoutX="367.0" layoutY="81.0" prefHeight="26.0" prefWidth="164.0" promptText="Year" visible="false" />
+            <JFXComboBox fx:id="prayear" layoutX="367.0" layoutY="206.0" prefHeight="26.0" prefWidth="164.0" promptText="Year" visible="false" />
+            <JFXRadioButton fx:id="jRadiokey" layoutX="56.0" layoutY="286.0" onAction="#btnjRadiokey" prefHeight="29.0" prefWidth="219.0" text="Solution" toggleGroup="$my">
+               <font>
+                  <Font size="22.0" />
+               </font>
+            </JFXRadioButton>
+            <JFXButton fx:id="solupdate" buttonType="RAISED" layoutX="573.0" layoutY="74.0" onAction="#jbtnsolupdate" prefHeight="41.0" prefWidth="103.0" ripplerFill="#0e09a8" style="-fx-background-color: #0c00ff; -fx-background-radius: 25;" text="Refresh" textFill="WHITE" visible="false" wrapText="true">
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </JFXButton>
+            <JFXComboBox fx:id="solpaper" layoutX="853.0" layoutY="81.0" prefHeight="26.0" prefWidth="256.0" promptText="Papeer Name" visible="false" />
+            <JFXButton fx:id="praupdate" buttonType="RAISED" layoutX="573.0" layoutY="199.0" onAction="#jbtnpraupdate" prefHeight="41.0" prefWidth="103.0" ripplerFill="#0e09a8" style="-fx-background-color: #0c00ff; -fx-background-radius: 25;" text="Refresh" textFill="WHITE" visible="false" wrapText="true">
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </JFXButton>
+            <JFXComboBox fx:id="prapaper" layoutX="853.0" layoutY="206.0" prefHeight="26.0" prefWidth="256.0" promptText="Papeer Name" visible="false" />
+            <JFXComboBox fx:id="keyyear" layoutX="367.0" layoutY="334.0" prefHeight="26.0" prefWidth="164.0" promptText="Year" visible="false" />
+            <JFXButton fx:id="keyupdate" buttonType="RAISED" layoutX="573.0" layoutY="326.0" onAction="#jbtnkeyupdate" prefHeight="41.0" prefWidth="103.0" ripplerFill="#0e09a8" style="-fx-background-color: #0c00ff; -fx-background-radius: 25;" text="Refresh" textFill="WHITE" visible="false" wrapText="true">
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </JFXButton>
+            <JFXComboBox fx:id="keypaper" layoutX="853.0" layoutY="334.0" prefHeight="26.0" prefWidth="256.0" promptText="Papeer Name" visible="false" />
+            <JFXComboBox fx:id="previousyear" layoutX="367.0" layoutY="444.0" prefHeight="26.0" prefWidth="164.0" promptText="Year" visible="false" />
+            <JFXButton fx:id="previousupdate" buttonType="RAISED" layoutX="573.0" layoutY="437.0" onAction="#jbtnpreviousupdate" prefHeight="41.0" prefWidth="103.0" ripplerFill="#0e09a8" style="-fx-background-color: #0c00ff; -fx-background-radius: 25;" text="Refresh" textFill="WHITE" visible="false" wrapText="true">
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </JFXButton>
+            <JFXComboBox fx:id="previouspaper" layoutX="853.0" layoutY="445.0" prefHeight="26.0" prefWidth="256.0" promptText="Papeer Name" visible="false" />
+         </children>
+      </Pane>
+      <MenuBar fx:id="menuuser" layoutX="1231.0" layoutY="7.0" style="-fx-background-color: #0c00ff; -fx-background-radius: 20;" />
+   </children>
+</AnchorPane>
