@@ -17,6 +17,13 @@ Java(TM) SE Runtime Environment (build 1.8.0_131-b11)
  
  use terminal
  
+ Attach database
+ mysql -u root -p
+ create database quiz
+ exit
+ mysql -u root -p  quiz  <  quiz.sql
+ 
+ 
  cd jar\ files
  ls
  java -jar Online_quiz.jar
