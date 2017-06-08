@@ -29,7 +29,9 @@ Java(TM) SE Runtime Environment (build 1.8.0_131-b11)
  
  
  cd jar\ files
+ 
  ls
+ 
  java -jar Online_quiz.jar
  
  
